@@ -5,7 +5,7 @@ Simple IEC 61850 GOOSE packet sniffer using `libpcap`.
 ## What it does
 
 - Captures Ethernet frames from a network interface.
-- Filters only GOOSE traffic (EtherType `0x88B8`), including VLAN-tagged frames.
+- Filters only GOOSE traffic (EtherType `0x88B8`), including VLAN-tagged frames (0x8100).
 - Prints packet metadata and a hex/ASCII dump to stdout.
 
 ## Install libpcap

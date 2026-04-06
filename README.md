@@ -8,8 +8,8 @@ Simple IEC 61850 GOOSE packet sniffer using `libpcap`.
 - Filters only GOOSE traffic (EtherType `0x88B8`), including VLAN-tagged frames.
 - Prints packet metadata and a hex/ASCII dump to stdout.
 
-
 ## Install libpcap
+
 ### On Debian/Ubuntu
 
 ```bash
@@ -30,6 +30,15 @@ cmake -S . -B cmake-build-debug
 cmake --build cmake-build-debug
 ```
 
+or
+
+```bash
+mkdir build
+cd build
+cmake ..
+make
+```
+
 ## Run
 
 Default interface (`en9`):
@@ -43,6 +52,7 @@ Custom interface:
 ```bash
 ./cmake-build-debug/goose-sniffer en0
 ```
+
 ```
 Listening for IEC 61850 GOOSE packets on interface 'en9'.
 Press Ctrl+C to stop.

@@ -17,7 +17,7 @@ sudo apt-get update
 sudo apt-get install libpcap-dev
 ```
 
-### On Macos
+### On macOS
 
 ```bash
 brew install libpcap

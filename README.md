@@ -26,8 +26,8 @@ brew install libpcap
 ## Build
 
 ```bash
-cmake -S . -B cmake-build-debug
-cmake --build cmake-build-debug
+cmake -S . -B build
+cmake --build build
 ```
 
 or
@@ -44,13 +44,13 @@ make
 Default interface (`en9`):
 
 ```bash
-./cmake-build-debug/goose-sniffer
+./build/goose-sniffer
 ```
 
 Custom interface:
 
 ```bash
-./cmake-build-debug/goose-sniffer en0
+./build/goose-sniffer en0
 ```
 
 ```
